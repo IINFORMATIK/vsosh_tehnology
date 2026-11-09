@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 470" role="img" aria-labelledby="title desc">
+  <title id="title">Этапы изготовления керамического изделия</title><desc id="desc">Последовательность от подготовки глины до глазурного обжига.</desc>
+  <rect width="1040" height="470" rx="28" fill="#f8fafc"/><text x="42" y="55" font-family="Arial" font-size="28" font-weight="700" fill="#0f172a">Технологический цикл керамики</text>
+  <g font-family="Arial" text-anchor="middle"><g fill="#fff" stroke="#cbd5e1" stroke-width="3"><rect x="35" y="130" width="160" height="180" rx="18"/><rect x="238" y="130" width="160" height="180" rx="18"/><rect x="441" y="130" width="160" height="180" rx="18"/><rect x="644" y="130" width="160" height="180" rx="18"/><rect x="847" y="130" width="160" height="180" rx="18"/></g>
+  <g font-size="20" font-weight="700" fill="#334155"><text x="115" y="265">Подготовка</text><text x="318" y="265">Формование</text><text x="521" y="265">Сушка</text><text x="724" y="255">Утильный</text><text x="724" y="280">обжиг</text><text x="927" y="255">Глазурование</text><text x="927" y="280">и обжиг</text></g>
+  <g font-size="54"><text x="115" y="210">◒</text><text x="318" y="210">♜</text><text x="521" y="210">☀</text><text x="724" y="210">♨</text><text x="927" y="210">✦</text></g></g>
+  <g stroke="#2563eb" stroke-width="5" fill="none"><path d="M198 220 H230"/><path d="M401 220 H433"/><path d="M604 220 H636"/><path d="M807 220 H839"/></g><g fill="#2563eb"><path d="m230 220-13-9v18z"/><path d="m433 220-13-9v18z"/><path d="m636 220-13-9v18z"/><path d="m839 220-13-9v18z"/></g>
+  <text x="42" y="385" font-family="Arial" font-size="19" fill="#64748b">На каждом этапе контролируют равномерность толщины, влажность, отсутствие воздушных полостей и соблюдение режима нагрева.</text>
+</svg>

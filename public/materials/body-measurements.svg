@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Основные мерки фигуры</title><desc id="desc">Схема расположения линий обхвата груди, талии, бёдер, длины спины и длины изделия.</desc>
+  <rect width="900" height="560" rx="28" fill="#f8fafc"/><text x="42" y="52" font-family="Arial" font-size="27" font-weight="700" fill="#0f172a">Основные мерки фигуры</text>
+  <g transform="translate(150 75)" fill="none" stroke="#334155" stroke-width="7" stroke-linecap="round"><circle cx="170" cy="55" r="40"/><path d="M170 96 C120 105 104 160 112 226 L92 390 M170 96 C220 105 236 160 228 226 L248 390 M112 226 C125 285 127 350 120 450 M228 226 C215 285 213 350 220 450 M120 450 L112 480 M220 450 L228 480"/></g>
+  <g fill="none" stroke="#2563eb" stroke-width="5"><ellipse cx="320" cy="240" rx="118" ry="22"/><ellipse cx="320" cy="307" rx="91" ry="18"/><ellipse cx="320" cy="373" rx="112" ry="22"/><path d="M342 170 L342 307" stroke-dasharray="10 8"/><path d="M435 170 L435 480" stroke="#f59e0b"/></g>
+  <g font-family="Arial" font-size="21" fill="#0f172a"><text x="490" y="235">ОГ — обхват груди</text><text x="490" y="302">ОТ — обхват талии</text><text x="490" y="369">ОБ — обхват бёдер</text><text x="490" y="424">ДТС — длина спины до талии</text><text x="490" y="470">ДИ — длина изделия</text></g>
+  <g stroke="#94a3b8" stroke-width="2"><path d="M438 230 H480"/><path d="M412 297 H480"/><path d="M435 364 H480"/><path d="M342 420 H480"/><path d="M435 466 H480"/></g>
+</svg>

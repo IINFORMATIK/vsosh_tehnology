@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+/* Dark styles must only be enabled explicitly. This keeps the portal light even
+   when the operating system or browser is configured to use a dark theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Unified neutral palette. Extra intermediate values support the existing
+     component classes while keeping them inside one visual system. */
+  --color-slate-50: #f8f9fb;
+  --color-slate-55: #f6f8fa;
+  --color-slate-100: #f1f3f6;
+  --color-slate-105: #eef1f5;
+  --color-slate-150: #e8ecf1;
+  --color-slate-155: #e5e9ef;
+  --color-slate-200: #dde2e9;
+  --color-slate-205: #d9dfe7;
+  --color-slate-250: #cbd3de;
+  --color-slate-300: #bbc5d2;
+  --color-slate-305: #b6c0ce;
+  --color-slate-350: #a8b3c2;
+  --color-slate-400: #8793a5;
+  --color-slate-410: #828fa1;
+  --color-slate-450: #748196;
+  --color-slate-455: #707d92;
+  --color-slate-500: #647084;
+  --color-slate-505: #606c80;
+  --color-slate-550: #566276;
+  --color-slate-600: #4a566a;
+  --color-slate-605: #465267;
+  --color-slate-650: #3c485c;
+  --color-slate-655: #394559;
+  --color-slate-700: #334055;
+  --color-slate-705: #303c50;
+  --color-slate-750: #293448;
+  --color-slate-755: #263145;
+  --color-slate-800: #202b3d;
+  --color-slate-805: #1d283a;
+  --color-slate-850: #192335;
+  --color-slate-855: #172133;
+  --color-slate-900: #131d2d;
+  --color-slate-905: #111b2a;
+  --color-slate-950: #0b1320;
+
+  /* One primary accent instead of several competing blue shades. */
+  --color-blue-50: #f0f5ff;
+  --color-blue-100: #dce8ff;
+  --color-blue-105: #d7e5ff;
+  --color-blue-200: #bfd3ff;
+  --color-blue-300: #94b5fb;
+  --color-blue-400: #6290ee;
+  --color-blue-450: #4f7fe8;
+  --color-blue-500: #356de0;
+  --color-blue-505: #3269db;
+  --color-blue-550: #2b61d3;
+  --color-blue-600: #2459c7;
+  --color-blue-700: #1e49a7;
+  --color-blue-750: #1b4197;
+  --color-blue-800: #1b3d87;
+  --color-blue-900: #1b356d;
+  --color-blue-950: #122044;
+
+  --color-brand-primary: #2459c7;
+  --color-brand-secondary: #d97706;
+  --color-slate-background: #0b1320;
+  --color-slate-card: #131d2d;
+
+  /* Compact and consistent geometry. */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
+  --radius-2xl: 0.75rem;
+
+  /* Soft elevation: borders carry most of the hierarchy. */
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.05);
+  --shadow-md: 0 4px 12px rgb(15 23 42 / 0.07);
+  --shadow-lg: 0 10px 24px rgb(15 23 42 / 0.09);
+  --shadow-xl: 0 16px 36px rgb(15 23 42 / 0.11);
+}
+
+:root {
+  --page-background: #f7f8fa;
+  --surface: #ffffff;
+  --surface-subtle: #f8f9fb;
+  --text-primary: #172033;
+  --text-secondary: #566276;
+  --border-default: #dde2e9;
+  --focus-ring: #356de0;
+
+  color-scheme: light;
+  background: var(--page-background);
+  color: var(--text-primary);
+  font-synthesis: none;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background: var(--page-background);
+}
+
+body {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: -0.018em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+input,
+textarea,
+select {
+  color-scheme: light;
+}
+
+/* Custom scrollbar for theoretical materials readability */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd3de;
+  border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8b3c2;
+}
+
+/* Simple animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Styling for dynamically rendered HTML content in textbook articles */
+.textbook-html-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.825rem;
+}
+
+.textbook-html-content th {
+  background-color: var(--surface-subtle);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-default);
+}
+
+.textbook-html-content td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border-default);
+  text-align: left;
+}
+
+.textbook-html-content tr:nth-child(even) {
+  background-color: var(--surface-subtle);
+}
+
+.textbook-html-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.textbook-html-content ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.textbook-html-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
