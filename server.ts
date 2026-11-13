@@ -1166,7 +1166,7 @@ function applyTwoLevelTestStructure(tests: any[]) {
 }
 
 const PORT = 3000;
-const DB_FILE = path.join(process.cwd(), "db_store.json");
+const DB_FILE = process.env.DB_FILE || path.join(process.cwd(), "db_store.json");
 
 function mergeDefaultMaterialImages(targetSyllabus: any[], sourceSyllabus: typeof syllabusData) {
   const imagesBySubsection = new Map<string, any[]>();

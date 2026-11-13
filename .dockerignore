@@ -1,0 +1,11 @@
+.git
+node_modules
+dist
+build
+coverage
+.env*
+db_store.json
+data
+tmp
+_design_backups
+*.log
